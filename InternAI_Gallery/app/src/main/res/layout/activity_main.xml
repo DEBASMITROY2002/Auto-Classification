@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVImages"
+        android:layout_width="395dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="338dp"
+        android:layout_height="239dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:columnCount="3"
+        app:layout_constraintBottom_toTopOf="@+id/idRVImages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865"
+        app:rowCount="2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:elevation="8dp"
+            app:cardBackgroundColor="@color/material_on_surface_disabled"
+            app:cardCornerRadius="10dp"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="0">
+
+            <ImageView
+                android:id="@+id/imageIcon00"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:layout_column="0"
+                app:layout_row="0"
+                app:srcCompat="@drawable/folder_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="sans-serif"
+                android:text="Animals"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_column="0"
+                app:layout_row="0" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:elevation="8dp"
+            app:cardBackgroundColor="@color/material_on_surface_disabled"
+            app:cardCornerRadius="10dp"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="0">
+
+            <ImageView
+                android:id="@+id/imageIcon01"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:layout_column="0"
+                app:layout_row="0"
+                app:srcCompat="@drawable/folder_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="sans-serif"
+                android:text="Faces"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:elevation="8dp"
+            app:cardBackgroundColor="@color/material_on_surface_disabled"
+            app:cardCornerRadius="10dp"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="0">
+
+            <ImageView
+                android:id="@+id/imageIcon02"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:layout_column="0"
+                app:layout_row="0"
+                app:srcCompat="@drawable/folder_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="sans-serif"
+                android:text="Person"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_column="0"
+                app:layout_row="0" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:elevation="8dp"
+            app:cardBackgroundColor="@color/material_on_surface_disabled"
+            app:cardCornerRadius="10dp"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="1">
+
+            <ImageView
+                android:id="@+id/imageIcon10"
+                android:layout_width="80dp"
+                android:layout_height="86dp"
+                android:layout_gravity="center"
+                app:layout_column="0"
+                app:layout_row="0"
+                app:srcCompat="@drawable/folder_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="sans-serif"
+                android:text="Landscape"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_column="0"
+                app:layout_row="0" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:elevation="8dp"
+            app:cardBackgroundColor="@color/material_on_surface_disabled"
+            app:cardCornerRadius="10dp"
+            app:layout_column="1"
+            app:layout_gravity="center"
+            app:layout_row="1">
+
+            <ImageView
+                android:id="@+id/imageIcon11"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:layout_column="0"
+                app:layout_row="0"
+                app:srcCompat="@drawable/folder_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Screenshot And Others"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:elevation="8dp"
+            app:cardBackgroundColor="@color/material_on_surface_disabled"
+            app:cardCornerRadius="10dp"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="1">
+
+            <ImageView
+                android:id="@+id/imageIcon12"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                app:layout_column="0"
+                app:layout_row="0"
+                app:srcCompat="@drawable/lock_folder_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="sans-serif"
+                android:text="Private"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_column="0"
+                app:layout_row="0" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/TITLE1"
+        android:layout_width="395dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Gallery"
+        android:textColor="@color/black"
+        android:textSize="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="346dp"
+        android:fontFamily="sans-serif-light"
+        android:text="AI Generated Folders"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="sans-serif-light"
+        android:text="All Photos"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/idRVImages"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="403dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/idRVImages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.028" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
